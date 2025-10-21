@@ -1,78 +1,105 @@
-header{
-    background-color: rgb(121, 92, 160);
-    padding: 10px 20px;
-    border-radius: 15px;
-}
-nav{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-.nav-right{
-    display: flex;
-    flex-wrap: wrap;
-    text-align: right;
-    gap: 20px;
-}
-body{
-    background-image: linear-gradient(to right,rgb(4, 4, 92),rgba(234, 12, 197, 0.829));
-}
-.skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-    justify-content: center;
-    gap: 20px;
-   
-}
-.skill-box{
-    flex: 1 1 calc(33.33-40px);
-    border: 1px solid #ccc;;
-    text-align: center;
-    border-radius: 8px;
-    background-color: #f2f2f2;
-    box-sizing: border-box;
-    padding: 20px;
-    background-image: linear-gradient(to right,rgb(134, 12, 118),rgb(8, 8, 103));
-}
-.c1{
-    border: 2px solid #353441;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 10px;
-    background-image: linear-gradient(to right,rgb(126, 8, 120),rgb(4, 4, 105));
+    header{
+        background-color: rgb(121, 92, 160);
+        padding: 10px 20px;
+        border-radius: 15px;
+    }
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav-right{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: right;
+        gap: 20px;
+    }
+    body{
+        background-image: linear-gradient(to right,rgb(4, 4, 92),rgba(234, 12, 197, 0.829));
+    }
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        justify-content: center;
+        gap: 20px;
+    
+    }
+    .skill-box{
+        flex: 1 1 calc(33.33%-40px);
+        border: 1px solid #ccc;;
+        text-align: center;
+        border-radius: 8px;
+        background-color: #f2f2f2;
+        box-sizing: border-box;
+        padding: 20px;
+        background-image: linear-gradient(to right,rgb(134, 12, 118),rgb(8, 8, 103));
+        color: #ccc;
+    }
+    .c1{
+        border: 2px solid #353441;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 10px;
+        background-image: linear-gradient(to right,rgb(126, 8, 120),rgb(4, 4, 105));
+        height: 50%;
+        width: 50%;
 
-}
-.c1 .detail p {
-  font-size: 16px;         
-  line-height: 1.6;          
-  color: #555;     
-}
-.c2 {
-    margin: 20px;
-    gap: 20px;
-    padding: 10px ;
-    background-image: linear-gradient(to  right,rgb(189, 9, 144),rgb(8, 8, 70));
-    width: 40%;
-}
-.c2 input{
-    text-align: center;
-    margin-left: 10%;
-    background-color: #25189c;
-    border-radius:8px ;
-    margin-bottom: 5%;
-    height: 30px;
-}
-.c2 input[type='submit']{
-    text-align: center;
-    color: white;                 
-    cursor: pointer;              
-    font-size: 18px;
-    border: none;                 
-    padding: 20px 20px;           
-    border-radius: 5px; 
-    background-color: #25189c;
-    margin-left: 20%;
+    }
+    p{
+        color: #ccc;
+    }
+    .c1 .detail p {
+    font-size: 16px;         
+    line-height: 1.6;          
+    color: #2d2b2b;     
+    }
+    .c2{
+        padding: 20px;
+        background-image: linear-gradient(to right,rgb(219, 92, 134),rgb(4, 4, 90));
+        border-radius: 15px;
+        width: 50%;
+    }
+    input [ type= "text"]{
+        color: #353441;
+    }
+    form button {
+        width: 100%;
+        padding: 12px;
+        background-image: linear-gradient(TO right,rgb(5, 5, 59),rgb(115, 3, 80)); /* blue background */
+        color: white;
+        border: none;
+        border-radius: 5px; /* rounded corners */
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
 
-}
+    form label {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        color: #e9d3d3;
+        margin-bottom: 5px;
+    }
+    form input[type="text"],form input[type="email"],form textarea{
+        width: 100%;
+        border-radius: 8PX;
+        margin: 0px;
+        padding: 0px;
+        line-height: 1.6;
+        background-image: linear-gradient(TO right,rgb(5, 5, 59),rgb(115, 3, 80));
+
+    }
+    form textarea {
+        height: 100px; /* taller than input fields */
+        resize: vertical; /* allow resizing vertically */
+    }
+    form {
+        margin-bottom: 20px;
+    }
+    form input::placeholder,form textarea::placeholder{
+        color: #eee7e7;
+        padding: 5px;
+        opacity: 1;
+    }
